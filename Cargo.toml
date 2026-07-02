@@ -18,6 +18,12 @@ napi-derive = "3"
 p256 = "0.13.2"
 sha2 = "0.11.0"
 
+[features]
+# CI-only: software mock backend (activated at runtime by
+# ENCLAVEAPP_MOCK_STORAGE=1) for platforms whose hardware cannot exist in a
+# VM runner (macOS Secure Enclave). Never enabled in release artifacts.
+mock = ["hardware-enclave/mock"]
+
 [build-dependencies]
 napi-build = "2"
 

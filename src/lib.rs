@@ -103,6 +103,17 @@ pub fn ensure_device_id(options: Option<DeviceIdOptions>) -> Result<DeviceId> {
     // AccessPolicy::Any, which prompts on every use.
     config.access_policy = Some(AccessPolicy::None);
     config.keys_dir = opts.dir.map(PathBuf::from);
+    // Physical machines never silently downgrade from the TPM; VMs without
+    // TPM passthrough (CI, desktop virtualization) get DPAPI software keys,
+    // honestly reported via `protection`.
+    #[cfg(target_os = "windows")]
+    {
+        config.platform =
+            hardware_enclave::PlatformConfig::Windows(hardware_enclave::WindowsConfig {
+                software_fallback: hardware_enclave::WindowsSoftwareFallback::VmOnly,
+                ..Default::default()
+            });
+    }
 
     let signer = create_signer(&config)
         .map_err(|e| crypto_err("no usable key backend on this machine", e))?;
