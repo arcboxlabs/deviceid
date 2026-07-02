@@ -1,0 +1,19 @@
+{
+  "name": "deviceid-win32-arm64-msvc",
+  "version": "0.1.0",
+  "cpu": [
+    "arm64"
+  ],
+  "main": "deviceid.win32-arm64-msvc.node",
+  "files": [
+    "deviceid.win32-arm64-msvc.node"
+  ],
+  "description": "A device ID that can't be faked: the fingerprint of a key your hardware holds",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 18"
+  },
+  "os": [
+    "win32"
+  ]
+}

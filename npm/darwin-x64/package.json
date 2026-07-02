@@ -1,0 +1,19 @@
+{
+  "name": "deviceid-darwin-x64",
+  "version": "0.1.0",
+  "cpu": [
+    "x64"
+  ],
+  "main": "deviceid.darwin-x64.node",
+  "files": [
+    "deviceid.darwin-x64.node"
+  ],
+  "description": "A device ID that can't be faked: the fingerprint of a key your hardware holds",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 18"
+  },
+  "os": [
+    "darwin"
+  ]
+}
