@@ -1,3 +1,3 @@
-# `deviceid-linux-x64-gnu`
+# `@deviceid/core-linux-x64-gnu`
 
-This is the **x86_64-unknown-linux-gnu** binary for `deviceid`
+This is the **x86_64-unknown-linux-gnu** binary for `@deviceid/core`

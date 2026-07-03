@@ -1,8 +1,12 @@
 {
-  "name": "deviceid",
+  "name": "@deviceid/core",
   "version": "0.1.0",
   "description": "A device ID that can't be faked: the fingerprint of a key your hardware holds",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arcboxlabs/deviceid.git"
+  },
   "main": "index.js",
   "types": "index.d.ts",
   "files": [
@@ -32,6 +36,9 @@
     "prepublishOnly": "napi prepublish -t npm"
   },
   "packageManager": "pnpm@11.9.0",
+  "optionalDependencies": {
+    "@deviceid/core-darwin-arm64": "0.1.0"
+  },
   "devDependencies": {
     "@napi-rs/cli": "^3.7.2"
   }

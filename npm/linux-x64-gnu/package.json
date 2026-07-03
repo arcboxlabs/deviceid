@@ -1,5 +1,5 @@
 {
-  "name": "deviceid-linux-x64-gnu",
+  "name": "@deviceid/core-linux-x64-gnu",
   "version": "0.1.0",
   "cpu": [
     "x64"
@@ -12,6 +12,10 @@
   "license": "MIT",
   "engines": {
     "node": ">= 18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arcboxlabs/deviceid.git"
   },
   "os": [
     "linux"
