@@ -98,7 +98,9 @@ jobs:
           name: bindings-${{ matrix.settings.target }}
       - run: |
           sudo apt-get update && sudo apt-get install -y gnome-keyring dbus libdbus-1-3
-          dbus-run-session -- bash -c 'eval "$(echo -n "" | gnome-keyring-daemon --unlock --components=secrets)"; pnpm test'
+          # Non-empty password + --daemonize creates and unlocks the login
+          # keyring headlessly (python-keyring's proven CI recipe).
+          dbus-run-session -- bash -c 'gnome-keyring-daemon --components=secrets --daemonize --unlock <<< "ci-keyring-password"; pnpm test'
 
   # Hardware that cannot exist inside a VM runner (macOS Secure Enclave,
   # Windows TPM) is tested through the software mock backend — same napi
