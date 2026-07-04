@@ -1,1 +1,6 @@
 packages: []
+
+# Our own packages: CI installs them minutes after publish, far inside the
+# supply-chain quarantine window every other dependency still honors.
+minimumReleaseAgeExclude:
+  - '@arcboxlabs/*'
