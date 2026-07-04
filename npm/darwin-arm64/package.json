@@ -1,5 +1,5 @@
 {
-  "name": "@deviceid/core-darwin-arm64",
+  "name": "@arcboxlabs/deviceid-darwin-arm64",
   "version": "0.1.0",
   "cpu": [
     "arm64"

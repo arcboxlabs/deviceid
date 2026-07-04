@@ -1,5 +1,5 @@
 {
-  "name": "@deviceid/core-win32-x64-msvc",
+  "name": "@arcboxlabs/deviceid-win32-x64-msvc",
   "version": "0.1.0",
   "cpu": [
     "x64"

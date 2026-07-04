@@ -1,3 +1,3 @@
-# `@deviceid/core-darwin-arm64`
+# `@arcboxlabs/deviceid-darwin-arm64`
 
-This is the **aarch64-apple-darwin** binary for `@deviceid/core`
+This is the **aarch64-apple-darwin** binary for `@arcboxlabs/deviceid`

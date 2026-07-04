@@ -1,3 +1,3 @@
-# `@deviceid/core-win32-arm64-msvc`
+# `@arcboxlabs/deviceid-win32-arm64-msvc`
 
-This is the **aarch64-pc-windows-msvc** binary for `@deviceid/core`
+This is the **aarch64-pc-windows-msvc** binary for `@arcboxlabs/deviceid`

@@ -1,4 +1,4 @@
-# @deviceid/core
+# @arcboxlabs/deviceid
 
 A device ID that can't be faked: the fingerprint of a key your hardware holds.
 
@@ -22,7 +22,7 @@ exposed to Node.js via [napi-rs](https://napi.rs) prebuilt binaries.
 ## Usage
 
 ```ts
-import { ensureDeviceId } from '@deviceid/core';
+import { ensureDeviceId } from '@arcboxlabs/deviceid';
 
 const device = ensureDeviceId({ dir: '~/.myapp/keys' });
 

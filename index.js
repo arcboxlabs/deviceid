@@ -75,8 +75,8 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        const binding = require('@deviceid/core-android-arm64')
-        const bindingPackageVersion = require('@deviceid/core-android-arm64/package.json').version
+        const binding = require('@arcboxlabs/deviceid-android-arm64')
+        const bindingPackageVersion = require('@arcboxlabs/deviceid-android-arm64/package.json').version
         if (bindingPackageVersion !== '0.1.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
           throw new Error(`Native binding package version mismatch, expected 0.1.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
         }
@@ -91,8 +91,8 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        const binding = require('@deviceid/core-android-arm-eabi')
-        const bindingPackageVersion = require('@deviceid/core-android-arm-eabi/package.json').version
+        const binding = require('@arcboxlabs/deviceid-android-arm-eabi')
+        const bindingPackageVersion = require('@arcboxlabs/deviceid-android-arm-eabi/package.json').version
         if (bindingPackageVersion !== '0.1.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
           throw new Error(`Native binding package version mismatch, expected 0.1.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
         }
@@ -112,8 +112,8 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        const binding = require('@deviceid/core-win32-x64-gnu')
-        const bindingPackageVersion = require('@deviceid/core-win32-x64-gnu/package.json').version
+        const binding = require('@arcboxlabs/deviceid-win32-x64-gnu')
+        const bindingPackageVersion = require('@arcboxlabs/deviceid-win32-x64-gnu/package.json').version
         if (bindingPackageVersion !== '0.1.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
           throw new Error(`Native binding package version mismatch, expected 0.1.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
         }
@@ -128,8 +128,8 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        const binding = require('@deviceid/core-win32-x64-msvc')
-        const bindingPackageVersion = require('@deviceid/core-win32-x64-msvc/package.json').version
+        const binding = require('@arcboxlabs/deviceid-win32-x64-msvc')
+        const bindingPackageVersion = require('@arcboxlabs/deviceid-win32-x64-msvc/package.json').version
         if (bindingPackageVersion !== '0.1.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
           throw new Error(`Native binding package version mismatch, expected 0.1.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
         }
@@ -145,8 +145,8 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        const binding = require('@deviceid/core-win32-ia32-msvc')
-        const bindingPackageVersion = require('@deviceid/core-win32-ia32-msvc/package.json').version
+        const binding = require('@arcboxlabs/deviceid-win32-ia32-msvc')
+        const bindingPackageVersion = require('@arcboxlabs/deviceid-win32-ia32-msvc/package.json').version
         if (bindingPackageVersion !== '0.1.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
           throw new Error(`Native binding package version mismatch, expected 0.1.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
         }
@@ -161,8 +161,8 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        const binding = require('@deviceid/core-win32-arm64-msvc')
-        const bindingPackageVersion = require('@deviceid/core-win32-arm64-msvc/package.json').version
+        const binding = require('@arcboxlabs/deviceid-win32-arm64-msvc')
+        const bindingPackageVersion = require('@arcboxlabs/deviceid-win32-arm64-msvc/package.json').version
         if (bindingPackageVersion !== '0.1.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
           throw new Error(`Native binding package version mismatch, expected 0.1.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
         }
@@ -180,8 +180,8 @@ function requireNative() {
       loadErrors.push(e)
     }
     try {
-      const binding = require('@deviceid/core-darwin-universal')
-      const bindingPackageVersion = require('@deviceid/core-darwin-universal/package.json').version
+      const binding = require('@arcboxlabs/deviceid-darwin-universal')
+      const bindingPackageVersion = require('@arcboxlabs/deviceid-darwin-universal/package.json').version
       if (bindingPackageVersion !== '0.1.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
         throw new Error(`Native binding package version mismatch, expected 0.1.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
       }
@@ -196,8 +196,8 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        const binding = require('@deviceid/core-darwin-x64')
-        const bindingPackageVersion = require('@deviceid/core-darwin-x64/package.json').version
+        const binding = require('@arcboxlabs/deviceid-darwin-x64')
+        const bindingPackageVersion = require('@arcboxlabs/deviceid-darwin-x64/package.json').version
         if (bindingPackageVersion !== '0.1.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
           throw new Error(`Native binding package version mismatch, expected 0.1.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
         }
@@ -212,8 +212,8 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        const binding = require('@deviceid/core-darwin-arm64')
-        const bindingPackageVersion = require('@deviceid/core-darwin-arm64/package.json').version
+        const binding = require('@arcboxlabs/deviceid-darwin-arm64')
+        const bindingPackageVersion = require('@arcboxlabs/deviceid-darwin-arm64/package.json').version
         if (bindingPackageVersion !== '0.1.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
           throw new Error(`Native binding package version mismatch, expected 0.1.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
         }
@@ -232,8 +232,8 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        const binding = require('@deviceid/core-freebsd-x64')
-        const bindingPackageVersion = require('@deviceid/core-freebsd-x64/package.json').version
+        const binding = require('@arcboxlabs/deviceid-freebsd-x64')
+        const bindingPackageVersion = require('@arcboxlabs/deviceid-freebsd-x64/package.json').version
         if (bindingPackageVersion !== '0.1.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
           throw new Error(`Native binding package version mismatch, expected 0.1.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
         }
@@ -248,8 +248,8 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        const binding = require('@deviceid/core-freebsd-arm64')
-        const bindingPackageVersion = require('@deviceid/core-freebsd-arm64/package.json').version
+        const binding = require('@arcboxlabs/deviceid-freebsd-arm64')
+        const bindingPackageVersion = require('@arcboxlabs/deviceid-freebsd-arm64/package.json').version
         if (bindingPackageVersion !== '0.1.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
           throw new Error(`Native binding package version mismatch, expected 0.1.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
         }
@@ -269,8 +269,8 @@ function requireNative() {
           loadErrors.push(e)
         }
         try {
-          const binding = require('@deviceid/core-linux-x64-musl')
-          const bindingPackageVersion = require('@deviceid/core-linux-x64-musl/package.json').version
+          const binding = require('@arcboxlabs/deviceid-linux-x64-musl')
+          const bindingPackageVersion = require('@arcboxlabs/deviceid-linux-x64-musl/package.json').version
           if (bindingPackageVersion !== '0.1.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
             throw new Error(`Native binding package version mismatch, expected 0.1.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
           }
@@ -285,8 +285,8 @@ function requireNative() {
           loadErrors.push(e)
         }
         try {
-          const binding = require('@deviceid/core-linux-x64-gnu')
-          const bindingPackageVersion = require('@deviceid/core-linux-x64-gnu/package.json').version
+          const binding = require('@arcboxlabs/deviceid-linux-x64-gnu')
+          const bindingPackageVersion = require('@arcboxlabs/deviceid-linux-x64-gnu/package.json').version
           if (bindingPackageVersion !== '0.1.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
             throw new Error(`Native binding package version mismatch, expected 0.1.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
           }
@@ -303,8 +303,8 @@ function requireNative() {
           loadErrors.push(e)
         }
         try {
-          const binding = require('@deviceid/core-linux-arm64-musl')
-          const bindingPackageVersion = require('@deviceid/core-linux-arm64-musl/package.json').version
+          const binding = require('@arcboxlabs/deviceid-linux-arm64-musl')
+          const bindingPackageVersion = require('@arcboxlabs/deviceid-linux-arm64-musl/package.json').version
           if (bindingPackageVersion !== '0.1.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
             throw new Error(`Native binding package version mismatch, expected 0.1.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
           }
@@ -319,8 +319,8 @@ function requireNative() {
           loadErrors.push(e)
         }
         try {
-          const binding = require('@deviceid/core-linux-arm64-gnu')
-          const bindingPackageVersion = require('@deviceid/core-linux-arm64-gnu/package.json').version
+          const binding = require('@arcboxlabs/deviceid-linux-arm64-gnu')
+          const bindingPackageVersion = require('@arcboxlabs/deviceid-linux-arm64-gnu/package.json').version
           if (bindingPackageVersion !== '0.1.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
             throw new Error(`Native binding package version mismatch, expected 0.1.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
           }
@@ -337,8 +337,8 @@ function requireNative() {
           loadErrors.push(e)
         }
         try {
-          const binding = require('@deviceid/core-linux-arm-musleabihf')
-          const bindingPackageVersion = require('@deviceid/core-linux-arm-musleabihf/package.json').version
+          const binding = require('@arcboxlabs/deviceid-linux-arm-musleabihf')
+          const bindingPackageVersion = require('@arcboxlabs/deviceid-linux-arm-musleabihf/package.json').version
           if (bindingPackageVersion !== '0.1.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
             throw new Error(`Native binding package version mismatch, expected 0.1.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
           }
@@ -353,8 +353,8 @@ function requireNative() {
           loadErrors.push(e)
         }
         try {
-          const binding = require('@deviceid/core-linux-arm-gnueabihf')
-          const bindingPackageVersion = require('@deviceid/core-linux-arm-gnueabihf/package.json').version
+          const binding = require('@arcboxlabs/deviceid-linux-arm-gnueabihf')
+          const bindingPackageVersion = require('@arcboxlabs/deviceid-linux-arm-gnueabihf/package.json').version
           if (bindingPackageVersion !== '0.1.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
             throw new Error(`Native binding package version mismatch, expected 0.1.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
           }
@@ -371,8 +371,8 @@ function requireNative() {
           loadErrors.push(e)
         }
         try {
-          const binding = require('@deviceid/core-linux-loong64-musl')
-          const bindingPackageVersion = require('@deviceid/core-linux-loong64-musl/package.json').version
+          const binding = require('@arcboxlabs/deviceid-linux-loong64-musl')
+          const bindingPackageVersion = require('@arcboxlabs/deviceid-linux-loong64-musl/package.json').version
           if (bindingPackageVersion !== '0.1.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
             throw new Error(`Native binding package version mismatch, expected 0.1.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
           }
@@ -387,8 +387,8 @@ function requireNative() {
           loadErrors.push(e)
         }
         try {
-          const binding = require('@deviceid/core-linux-loong64-gnu')
-          const bindingPackageVersion = require('@deviceid/core-linux-loong64-gnu/package.json').version
+          const binding = require('@arcboxlabs/deviceid-linux-loong64-gnu')
+          const bindingPackageVersion = require('@arcboxlabs/deviceid-linux-loong64-gnu/package.json').version
           if (bindingPackageVersion !== '0.1.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
             throw new Error(`Native binding package version mismatch, expected 0.1.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
           }
@@ -405,8 +405,8 @@ function requireNative() {
           loadErrors.push(e)
         }
         try {
-          const binding = require('@deviceid/core-linux-riscv64-musl')
-          const bindingPackageVersion = require('@deviceid/core-linux-riscv64-musl/package.json').version
+          const binding = require('@arcboxlabs/deviceid-linux-riscv64-musl')
+          const bindingPackageVersion = require('@arcboxlabs/deviceid-linux-riscv64-musl/package.json').version
           if (bindingPackageVersion !== '0.1.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
             throw new Error(`Native binding package version mismatch, expected 0.1.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
           }
@@ -421,8 +421,8 @@ function requireNative() {
           loadErrors.push(e)
         }
         try {
-          const binding = require('@deviceid/core-linux-riscv64-gnu')
-          const bindingPackageVersion = require('@deviceid/core-linux-riscv64-gnu/package.json').version
+          const binding = require('@arcboxlabs/deviceid-linux-riscv64-gnu')
+          const bindingPackageVersion = require('@arcboxlabs/deviceid-linux-riscv64-gnu/package.json').version
           if (bindingPackageVersion !== '0.1.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
             throw new Error(`Native binding package version mismatch, expected 0.1.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
           }
@@ -438,8 +438,8 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        const binding = require('@deviceid/core-linux-ppc64-gnu')
-        const bindingPackageVersion = require('@deviceid/core-linux-ppc64-gnu/package.json').version
+        const binding = require('@arcboxlabs/deviceid-linux-ppc64-gnu')
+        const bindingPackageVersion = require('@arcboxlabs/deviceid-linux-ppc64-gnu/package.json').version
         if (bindingPackageVersion !== '0.1.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
           throw new Error(`Native binding package version mismatch, expected 0.1.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
         }
@@ -454,8 +454,8 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        const binding = require('@deviceid/core-linux-s390x-gnu')
-        const bindingPackageVersion = require('@deviceid/core-linux-s390x-gnu/package.json').version
+        const binding = require('@arcboxlabs/deviceid-linux-s390x-gnu')
+        const bindingPackageVersion = require('@arcboxlabs/deviceid-linux-s390x-gnu/package.json').version
         if (bindingPackageVersion !== '0.1.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
           throw new Error(`Native binding package version mismatch, expected 0.1.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
         }
@@ -474,8 +474,8 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        const binding = require('@deviceid/core-openharmony-arm64')
-        const bindingPackageVersion = require('@deviceid/core-openharmony-arm64/package.json').version
+        const binding = require('@arcboxlabs/deviceid-openharmony-arm64')
+        const bindingPackageVersion = require('@arcboxlabs/deviceid-openharmony-arm64/package.json').version
         if (bindingPackageVersion !== '0.1.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
           throw new Error(`Native binding package version mismatch, expected 0.1.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
         }
@@ -490,8 +490,8 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        const binding = require('@deviceid/core-openharmony-x64')
-        const bindingPackageVersion = require('@deviceid/core-openharmony-x64/package.json').version
+        const binding = require('@arcboxlabs/deviceid-openharmony-x64')
+        const bindingPackageVersion = require('@arcboxlabs/deviceid-openharmony-x64/package.json').version
         if (bindingPackageVersion !== '0.1.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
           throw new Error(`Native binding package version mismatch, expected 0.1.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
         }
@@ -506,8 +506,8 @@ function requireNative() {
         loadErrors.push(e)
       }
       try {
-        const binding = require('@deviceid/core-openharmony-arm')
-        const bindingPackageVersion = require('@deviceid/core-openharmony-arm/package.json').version
+        const binding = require('@arcboxlabs/deviceid-openharmony-arm')
+        const bindingPackageVersion = require('@arcboxlabs/deviceid-openharmony-arm/package.json').version
         if (bindingPackageVersion !== '0.1.0' && process.env.NAPI_RS_ENFORCE_VERSION_CHECK && process.env.NAPI_RS_ENFORCE_VERSION_CHECK !== '0') {
           throw new Error(`Native binding package version mismatch, expected 0.1.0 but got ${bindingPackageVersion}. You can reinstall dependencies to fix this issue.`)
         }
@@ -548,7 +548,7 @@ if (!nativeBinding || forceWasi) {
   }
   if (!nativeBinding || forceWasi) {
     try {
-      wasiBinding = require('@deviceid/core-wasm32-wasi')
+      wasiBinding = require('@arcboxlabs/deviceid-wasm32-wasi')
       nativeBinding = wasiBinding
     } catch (err) {
       if (forceWasi) {
