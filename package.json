@@ -1,6 +1,6 @@
 {
   "name": "@arcboxlabs/deviceid",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A device ID that can't be faked: the fingerprint of a key your hardware holds",
   "license": "MIT",
   "repository": {

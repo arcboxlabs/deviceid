@@ -157,6 +157,14 @@ jobs:
       - run: pnpm exec napi create-npm-dirs
       - run: pnpm exec napi artifacts
       - name: Publish
-        run: npm publish --access public
+        # NPM_TOKEN bootstraps releases while packages are too new to carry a
+        # trusted-publisher config; once all packages have one, delete the
+        # secret and this falls through to OIDC.
+        run: |
+          if [ -n "$NPM_TOKEN" ]; then
+            echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
+          fi
+          npm publish --access public
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
