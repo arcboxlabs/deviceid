@@ -12,7 +12,9 @@ crate-type = ["cdylib"]
 
 [dependencies]
 base64 = "0.22.1"
-hardware-enclave = { version = "0.2.10", features = ["signing"] }
+# `keyring-storage` unlocks the Linux Secret Service backend; without it,
+# non-WSL Linux has no signer at all.
+hardware-enclave = { version = "0.2.10", features = ["signing", "keyring-storage"] }
 napi = "3"
 napi-derive = "3"
 p256 = "0.13.2"

@@ -46,5 +46,9 @@ export interface DeviceIdOptions {
  * Ensure this machine has a device identity: load the existing key or
  * generate one in the security hardware. Idempotent — the same installation
  * always resolves to the same key, and therefore the same {@link DeviceId#id}.
+ *
+ * Fail-closed: on machines with no usable backend (Windows without a TPM,
+ * Linux without a Secret Service) this throws instead of silently
+ * downgrading — pair it with your own software fallback if you need one.
  */
 export declare function ensureDeviceId(options?: DeviceIdOptions | undefined | null): DeviceId

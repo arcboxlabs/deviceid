@@ -16,6 +16,10 @@ private key that physically cannot leave the chip.
 | WSL2 | Bridge to the host Windows TPM | `hardware` |
 | Linux | Keyring-encrypted key | `software` |
 
+Fail-closed: with no usable backend (Windows without a TPM, Linux without a
+Secret Service — typically VMs), `ensureDeviceId` throws rather than silently
+downgrading. Pair it with your own software fallback if you need one.
+
 Built on [godaddy/hardware-enclave](https://github.com/godaddy/hardware-enclave),
 exposed to Node.js via [napi-rs](https://napi.rs) prebuilt binaries.
 
